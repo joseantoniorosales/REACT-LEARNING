@@ -16,6 +16,10 @@
   justify-content: space-between;
 }
 
+.tw-follow-card-text {
+  width: 200px;
+}
+
 .tw-follow-card-pfp {
   height: 48px;
   width: 48px;

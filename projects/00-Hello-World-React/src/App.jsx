@@ -5,6 +5,7 @@ import { CardFollow } from "./components/Card-Follow/Card-Follow";
 export function App() {
   return (
     // <></> es equivalente a <Fragment></Fragment>
+
     <section className="App">
       <CardFollow
         userPfp="https://avatars.githubusercontent.com/u/55782170?v=4"
@@ -31,13 +32,6 @@ export function App() {
         userPfp={"https://avatars.githubusercontent.com/u/191065380?v=4"}
         userName={"Francisco Javier Lugo"}
         userTag={"GorrionExample"}
-        isFollowing={"Follow" /*isFollowing=false*/}
-      />
-
-      <CardFollow
-        userPfp={"https://avatars.githubusercontent.com/u/191065380?v=4"}
-        userName={"Luis López Castillo"}
-        userTag={"xLoksExample"}
         isFollowing={"Follow" /*isFollowing=false*/}
       />
     </section>
