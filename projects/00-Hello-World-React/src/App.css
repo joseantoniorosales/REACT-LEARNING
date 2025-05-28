@@ -1,0 +1,44 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.tw-follow-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tw-follow-card-pfp {
+  height: 48px;
+  width: 48px;
+  border-radius: 1000px;
+}
+
+.tw-follow-card-head {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.tw-follow-card-username {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tw-follow-card-usertag {
+  opacity: 0.6;
+  margin-top: 10px;
+}
+
+.tw-follow-card-button {
+  border-radius: 1000px;
+}
