@@ -17,7 +17,7 @@
 }
 
 .tw-follow-card-text {
-  width: 200px;
+  width: 250px;
 }
 
 .tw-follow-card-pfp {
@@ -45,4 +45,5 @@
 
 .tw-follow-card-button {
   border-radius: 1000px;
+  width: 100px;
 }
