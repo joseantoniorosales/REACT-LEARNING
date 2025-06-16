@@ -47,3 +47,11 @@
   border-radius: 1000px;
   width: 100px;
 }
+
+.tw-follow-card-button.is-following:hover {
+  background-color: #747bff;
+}
+
+.tw-follow-card-button.is-unfollowing:hover {
+  background-color: #ff0000;
+}

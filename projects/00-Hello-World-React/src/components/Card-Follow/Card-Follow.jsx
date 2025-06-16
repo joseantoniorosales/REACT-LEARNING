@@ -5,15 +5,19 @@ export function CardFollow({
   userName,
   userTag,
   formatTag = (userTag) => `@${userTag}`,
-  isFollowing, // Sigue estando definido por si necesito usar el prop para algo
 }) {
   const [isFollowingState, setIsFollowingState] = useState("follow");
 
   const toggleFollow = () => {
     setIsFollowingState((prev) =>
-      prev === "unfollow" ? "follow" : "unfollow"
+      /* if (prev === "follow") {
+        return "unfollow";
+      } else if (prev === "unfollow") {
+        return "follow";
+      } */
+      prev === "follow" ? "unfollow" : "follow"
     );
-  };
+  }; // TODO Comenzar a utilizar más seguido expresiones ternarias hasta hacerlo siempre
 
   return (
     <article className="tw-follow-card">
@@ -25,7 +29,12 @@ export function CardFollow({
             <span className="tw-follow-card-usertag">{formatTag(userTag)}</span>
           </div>
         </div>
-        <button className="tw-follow-card-button" onClick={toggleFollow}>
+        <button
+          className={`tw-follow-card-button ${
+            isFollowingState === "follow" ? "is-following" : "is-unfollowing"
+          }`}
+          onClick={toggleFollow}
+        >
           {isFollowingState === "follow" ? "Follow" : "Unfollow"}
         </button>
       </header>
