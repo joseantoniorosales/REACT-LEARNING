@@ -1,11 +1,13 @@
-import { useState } from "react";
+//import { useState } from "react";
+
+// TODO Implementar lógica Dialog
 
 export function ConfirmDialog(message, onCancel, onConfirm) {
-  if (!isShown) {
+  /*if (!isShown) {
     return null;
   }
 
-  const [isShown, setIsShown] = useState(false);
+  /* const [isShown, setIsShown] = useState(false);
 
   /**
    * ! Sin implementar aun, esperar a ver como funciona bien en el curso

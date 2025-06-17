@@ -3,6 +3,14 @@ import "./App.css";
 import { CardFollow } from "./components/Card-Follow/Card-Follow";
 
 export function App() {
+  /**
+   * TODO Añadir userTag formateada mediante prompts (el curso no lo termina de explicar bien)
+   * ? const formattedUserTag = (<span>@{userTag}</span>)
+   *
+   * * const exampleProp = "ExampleProp"
+   * * const formattedUserTagEx = <span>@{exampleProp}</span>
+   * */
+
   return (
     /**
      * ? Añadido a la section un classname para poder añadirle un estilo a todo el contenedor
@@ -15,7 +23,7 @@ export function App() {
       <CardFollow
         userPfp="https://avatars.githubusercontent.com/u/55782170?v=4"
         userName={"Jose Antonio Rosales"}
-        userTag={"Baam9999"}
+        userTag={"Baam9999"} // TODO Usar props para formatear los userTag
         isFollowing={"Follow"}
       />
 

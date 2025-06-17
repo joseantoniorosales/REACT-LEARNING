@@ -5,6 +5,7 @@ export function CardFollow({
   userName,
   userTag,
   formatTag = (userTag) => `@${userTag}`,
+  // TODO formattedUserTag,
 }) {
   const [isFollowingState, setIsFollowingState] = useState("follow");
 
@@ -26,7 +27,7 @@ export function CardFollow({
         <div className="tw-follow-card-text">
           <strong className="tw-follow-card-username">{userName}</strong>
           <div>
-            <span className="tw-follow-card-usertag">{formatTag(userTag)}</span>
+            <span className="tw-follow-card-usertag">{formatTag(userTag) /* formattedUserTag */}</span>
           </div>
         </div>
         <button

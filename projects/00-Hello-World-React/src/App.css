@@ -50,8 +50,12 @@
 
 .tw-follow-card-button.is-following:hover {
   background-color: #747bff;
+  cursor: pointer;
+  transition: .10s ease;
 }
 
 .tw-follow-card-button.is-unfollowing:hover {
   background-color: #ff0000;
+  cursor: pointer;
+  transition: .3s ease;
 }
